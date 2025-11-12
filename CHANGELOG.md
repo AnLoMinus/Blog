@@ -4,7 +4,10 @@
 
 ### [Unreleased]
 
-- ללא שינויים מהותיים מאז השחרור האחרון.
+#### Added
+
+- `_posts/2025-11-12-blogspark-launch.md` – פוסט פתיחה רשמי לבלוג המציג את החזון והשלבים הבאים.
+- `.github/workflows/jekyll-gh-pages.yml` – תהליך CI/CD לפריסת האתר אוטומטית ל-GitHub Pages.
 
 ### [0.1.0] - 2025-11-12
 
