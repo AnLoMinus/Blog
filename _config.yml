@@ -1,0 +1,55 @@
+title: "BlogSpark – בלוג הניצוצות"
+description: "ארכיון האור של AnLoMinus – בלוג Jekyll פתוח לשיתוף והשראה."
+url: "https://anlominus.github.io/Blog"
+baseurl: ""
+lang: he
+timezone: Asia/Jerusalem
+author:
+  name: "AnLoMinus"
+  email: "contact@example.com"
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+permalink: /:categories/:title/
+
+header_pages:
+  - about.md
+  - tags.md
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "AnLoMinus"
+      lang: he
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      lang: he
+
+collections:
+  posts:
+    output: true
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+  - node_modules
+
+feed:
+  path: feed.xml
+

@@ -1,0 +1,106 @@
+---
+# זהו קובץ Sass שנבנה לתוך main.css
+---
+
+@charset "utf-8";
+
+$primary-color: #0ffbdf;
+$accent-color: #ffd700;
+$dark-bg: #0f111a;
+$light-text: #f9fbff;
+
+body {
+  direction: rtl;
+  font-family: "Assistant", "Alef", "Segoe UI", sans-serif;
+  background: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+header.site-header {
+  background: linear-gradient(120deg, $primary-color, $accent-color);
+  color: $dark-bg;
+  padding: 1.6rem 0;
+
+  .site-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .site-description {
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+  }
+}
+
+nav.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.site-footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  background: $dark-bg;
+  color: $light-text;
+  text-align: center;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 2rem;
+  }
+}
+
+.post-meta {
+  color: #5c5c5c;
+  font-size: 0.9rem;
+}
+
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  margin-top: 2rem;
+}
+
+.tag-list {
+  list-style: none;
+  padding: 0;
+
+  > li {
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    color: $primary-color;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+

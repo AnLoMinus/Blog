@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
+                "file": "CHANGELOG.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "CHANGELOG"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "CHANGELOG.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for CHANGELOG"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "CHANGELOG.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from README"
+              "title": "Outgoing links from CHANGELOG"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "CHANGELOG.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of CHANGELOG"
             }
           }
         ]
@@ -185,6 +185,16 @@
   },
   "active": "f65e52caa7c468c0",
   "lastOpenFiles": [
+    "assets/css/main.scss",
+    "assets/css",
+    "README.md",
+    "assets/main.scss",
+    "tags.md",
+    "about.md",
+    "index.md",
+    "_config.yml",
+    "assets",
+    "_layouts",
     "_posts/2025-11-12-blogspark-launch.md",
     "_posts",
     "CHANGELOG.md",
@@ -194,7 +204,6 @@
     "ROADMAP.md",
     "CODE_OF_CONDUCT.md",
     "CONTRIBUTING.md",
-    "README.md",
     "SECURITY.md",
     "LICENSE"
   ]

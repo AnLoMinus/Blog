@@ -8,6 +8,11 @@
 
 - `_posts/2025-11-12-blogspark-launch.md` – פוסט פתיחה רשמי לבלוג המציג את החזון והשלבים הבאים.
 - `.github/workflows/jekyll-gh-pages.yml` – תהליך CI/CD לפריסת האתר אוטומטית ל-GitHub Pages.
+- `_config.yml` – הגדרות כלליות, תוספים ומבנה ניווט ל-Jekyll.
+- `index.md` – דף בית המציג את הפוסטים האחרונים.
+- `about.md` – עמוד אודות קהילת BlogSpark.
+- `tags.md` – עמוד תגיות דינמי לניווט בין פוסטים.
+- `assets/main.scss` – סגנון RTL וצבעוניות ייחודית לבלוג.
 
 ### [0.1.0] - 2025-11-12
 
