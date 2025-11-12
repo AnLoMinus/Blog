@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<article class="section post">
+  <div class="container narrow">
+    <header class="post-header">
+      <p class="post-meta">
+        {{ page.date | date: "%d.%m.%Y" }}
+        {% if page.categories and page.categories != empty %}
+        · {{ page.categories | join: ", " }}
+        {% endif %}
+      </p>
+      <h1>{{ page.title }}</h1>
+      {% if page.hebrew_date %}
+      <p class="post-meta hebrew-date">{{ page.hebrew_date }}</p>
+      {% endif %}
+    </header>
+    <div class="post-content">
+      {{ content }}
+    </div>
+    <footer class="post-footer">
+      <div class="post-tags">
+        {% if page.tags %}
+        <span>תגיות:</span>
+        <ul>
+          {% for tag in page.tags %}
+          <li><a href="{{ '/tags/#' | append: tag | slugify | relative_url }}">{{ tag }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      <div class="post-share">
+        <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ page.url | absolute_url }}" target="_blank" rel="noopener">שיתוף בטוויטר</a>
+        <a href="https://t.me/share/url?url={{ page.url | absolute_url }}&text={{ page.title | uri_escape }}" target="_blank" rel="noopener">שיתוף בטלגרם</a>
+      </div>
+    </footer>
+  </div>
+</article>
+

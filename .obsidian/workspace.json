@@ -185,6 +185,10 @@
   },
   "active": "e8fd33237a4f0f45",
   "lastOpenFiles": [
+    "_layouts/post.html",
+    "_layouts/page.html",
+    "_layouts/home.html",
+    "_layouts/default.html",
     "CHANGELOG.md",
     "assets/css/main.scss",
     "assets/css",
@@ -204,7 +208,6 @@
     "ROADMAP.md",
     "CODE_OF_CONDUCT.md",
     "CONTRIBUTING.md",
-    "SECURITY.md",
-    "LICENSE"
+    "SECURITY.md"
   ]
 }

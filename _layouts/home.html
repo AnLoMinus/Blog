@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<section class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <p class="eyebrow">ברוכים הבאים</p>
+            <h1>{{ page.title | default: site.title }}</h1>
+            <p class="lead">
+                {{ page.description | default: "מקום שבו רעיונות, מדריכים והשראות לבניית בלוגי Jekyll נפגשים. התעדכנו
+                בניצוץ האחרון וחזרו לכאן כדי לגלות אחרים." }}
+            </p>
+            <div class="hero-actions">
+                <a class="btn primary" href="{{ '/about/' | relative_url }}">הכירו את הקהילה</a>
+                <a class="btn ghost" href="https://github.com/AnLoMinus/Blog" target="_blank" rel="noopener">צפו
+                    בקוד</a>
+            </div>
+        </div>
+        <div class="hero-card">
+            <h2>הפוסט האחרון</h2>
+            {% assign latest_post = site.posts | first %}
+            {% if latest_post %}
+            <article>
+                <h3><a href="{{ latest_post.url | relative_url }}">{{ latest_post.title }}</a></h3>
+                <p class="post-meta">
+                    {{ latest_post.date | date: "%d.%m.%Y" }} · {{ latest_post.categories | join: ", " }}
+                </p>
+                <p class="post-excerpt">
+                    {{ latest_post.excerpt | strip_html | truncate: 140 }}
+                </p>
+                <a class="read-more" href="{{ latest_post.url | relative_url }}">לקריאת הפוסט →</a>
+            </article>
+            {% else %}
+            <p>עדיין אין פוסטים, אבל הם כבר בדרך!</p>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<section class="section posts">
+    <div class="container">
+        <div class="section-head">
+            <h2>פוסטים עדכניים</h2>
+            <a class="link-inline" href="{{ '/feed.xml' | relative_url }}">הרשמה ל-RSS</a>
+        </div>
+        <div class="posts-grid">
+            {% for post in site.posts %}
+            <article class="post-card">
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                <p class="post-meta">
+                    {{ post.date | date: "%d.%m.%Y" }} · {{ post.categories | join: ", " }}
+                </p>
+                <p>{{ post.excerpt | strip_html | truncate: 110 }}</p>
+                <div class="post-card-actions">
+                    <a href="{{ post.url | relative_url }}">המשך קריאה</a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
