@@ -1,12 +1,11 @@
 title: "BlogSpark – בלוג הניצוצות"
 description: "ארכיון האור של AnLoMinus – בלוג Jekyll פתוח לשיתוף והשראה."
-url: "https://anlominus.github.io/Blog"
-baseurl: ""
+url: "https://anlominus.github.io"
+baseurl: "/Blog"
 lang: he
 timezone: Asia/Jerusalem
-author:
-  name: "AnLoMinus"
-  email: "contact@example.com"
+author: "AnLoMinus"
+email: "contact@example.com"
 
 markdown: kramdown
 theme: minima
