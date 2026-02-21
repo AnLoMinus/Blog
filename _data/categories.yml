@@ -1,0 +1,23 @@
+- name: "development"
+  title: פיתוח וקוד
+  icon: "💻"
+  description: מאמרים על שפות תכנות, בניית פרויקטים וסביבות עבודה.
+  color: "#3498db"
+
+- name: "music"
+  title: יצירה ומוזיקה
+  icon: "🎵"
+  description: עיבודים בסונו, שירים, באטל ראפ ואמנות המוזיקה.
+  color: "#9b59b6"
+
+- name: "spirit"
+  title: התפתחות ורוח
+  icon: "🌌"
+  description: תודעה, זוגיות מוארת ופיתוח פנימי לחיים טובים יותר.
+  color: "#f1c40f"
+
+- name: "security"
+  title: הקינג ואבטחה
+  icon: "🛡️"
+  description: כלים, שיטות ובדיקות אבטחת מידע לפרויקטים השונים.
+  color: "#e74c3c"

@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+{% assign cat_name = page.category_id %}
+{% assign cat_data = site.data.categories | where: "name", cat_name | first %}
+
+<div class="category-header" style="border-top: 4px solid {{ cat_data.color }}; padding-top: 1rem;">
+  <h1>{{ cat_data.icon }} {{ cat_data.title }}</h1>
+  <p class="category-description" style="font-size: 1.1rem; color: #888;">{{ cat_data.description }}</p>
+  <a href="{{ site.baseurl }}/categories/" class="back-link">← חזרה לפורומים</a>
+</div>
+
+<hr>
+
+<ul class="post-list">
+  {% assign has_posts = false %}
+  {% for post in site.posts %}
+    {% if post.categories contains cat_name %}
+      {% assign has_posts = true %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%d/%m/%Y" }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {% if post.excerpt %}
+          <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+{% if has_posts == false %}
+  <p>אין עדיין פוסטים בקטגוריה זו. היו הראשונים להוסיף!</p>
+{% endif %}
+
+<style>
+.category-header {
+  margin-bottom: 2rem;
+}
+.back-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9em;
+  color: #3498db;
+  text-decoration: none;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+</style>
