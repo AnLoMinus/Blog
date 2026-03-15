@@ -2,7 +2,7 @@
 layout: post
 title: "IsraelGPT - להחיות את חכמת הדורות בלחיצת כפתור 📜✨"
 date: 2026-03-15 09:40:53 +0200
-hebrew_date: "כ"ו באדר תשפ"ו"
+hebrew_date: "כו באדר תשפו"
 categories: [בינה מלאכותית, פיתוח, יהדות]
 tags: [israelgpt, gemini, typescript, open-source, הוליזם, רוחנות]
 ---
