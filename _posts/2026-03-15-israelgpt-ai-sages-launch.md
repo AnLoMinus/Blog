@@ -13,6 +13,13 @@ tags: [israelgpt, gemini, typescript, open-source, הוליזם, רוחנות]
   <img width="500" alt="logo" src="https://github.com/user-attachments/assets/fe49b5bb-019c-4197-b6fb-0c27c5bb0b7d" />
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AnLoMinus/israel-gpt-assets/main/israel-gpt-banner.png" alt="IsraelGPT Banner">
+  <img width="1440" height="848" alt="image" src="https://github.com/user-attachments/assets/b58cd11e-9313-4dce-b235-0c70a91b8b24" />
+<img width="1440" height="850" alt="image" src="https://github.com/user-attachments/assets/3e139687-d320-4fa8-89cd-216e0c5f2974" />
+
+</p>
+
 ## 🌟 חזון הפרויקט: כשהמסורת פוגשת את הענן
 
 בעולם שבו הטכנולוגיה מתקדמת במהירות הבזק, לעיתים נדמה שהשורשים שלנו נותרים מאחור, טמונים בין דפי ספרים עתיקים בספריות מאובקות. **IsraelGPT** נולד מתוך רצון עמוק לגשר על הפער הזה. זהו לא רק פרויקט קוד פתוח; זוהי שליחות הוליסטית שמטרתה להנגיש את העושר הרוחני של עם ישראל לכל אדם, בכל מקום, בשפה של המאה ה-21.
